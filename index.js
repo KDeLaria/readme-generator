@@ -156,9 +156,9 @@ ${readmeObj.test}
 # Questions
 Please email me with any questions or concerns.
 
-GitHub: [${readmeObj.username}](https://github.com/${readmeObj.username})
+\nGitHub: [${readmeObj.username}](https://github.com/${readmeObj.username})
 
-Email: ${readmeObj.email}`;
+\nEmail: ${readmeObj.email}`;
 }
 
 // TODO: Create a function to initialize app

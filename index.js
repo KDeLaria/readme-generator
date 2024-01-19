@@ -117,46 +117,46 @@ function writeToFile(fileName, data) {
 function prepReadmeObj (readmeObj) {
     return `# ${readmeObj.title}
 
-    ## Description
-    ${readmeObj.description}
+## Description
+${readmeObj.description}
     
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
-    - [Badges](#badges)
-    - [Features](#features)
-    - [How to Contribute](#How-to-Contribute)
-    - [Tests](#tests)
-    - [Questions](#questions)
-    
-    ## Installation
-    ${readmeObj.installation}
-    
-    ## Usage
-    ${readmeObj.usage}
-    
-    ## Credits
-    
-    
-    ## License
-    ${readmeObj.license}
-    
-    ## Badges
-    
-    ## Features
-    
-    ## How to Contribute
-    ${readmeObj.contribution}
-    
-    # Tests
-    ${readmeObj.test}
-    
-    # Questions
-    Please email me with any questions or concerns.
-    GitHub: [${readmeObj.username}](https://github.com/${readmeObj.username})
-    Email: ${readmeObj.email}`;
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Badges](#badges)
+- [Features](#features)
+- [How to Contribute](#How-to-Contribute)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${readmeObj.installation}
+
+## Usage
+${readmeObj.usage}
+
+## Credits
+
+
+## License
+${readmeObj.license}
+
+## Badges
+
+## Features
+
+## How to Contribute
+${readmeObj.contribution}
+
+# Tests
+${readmeObj.test}
+
+# Questions
+Please email me with any questions or concerns.
+GitHub: [${readmeObj.username}](https://github.com/${readmeObj.username})
+Email: ${readmeObj.email}`;
 }
 
 // TODO: Create a function to initialize app

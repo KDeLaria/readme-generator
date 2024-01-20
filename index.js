@@ -10,49 +10,41 @@ function askReadMeQuestions() {
             message: "What is your username for GitHub? ",
             name: "username"
         },
-
         {
             type: "input",
             message: "What is your email address? ",
             name: "email"
         },
-
         {
             type: "input",
             message: "What is the title of your for your project? ",
             name: "title"
         },
-
         {
             type: "input",
             message: "Describe your project: ",
             name: "description"
         },
-
         {
             type: "input",
             message: "How do you install your project? ",
             name: "installation"
         },
-
         {
             type: "input",
             message: "How do you use your project? ",
             name: "usage"
         },
-
         {
             type: "input",
             message: "What are the contribution guidlines for the project? ",
             name: "contribution"
         },
-
         {
             type: "input",
             message: "What tests should be run on your code? ",
             name: "test"
         },
-
         {
             type: "list",
             message: "Which license will you use? ",

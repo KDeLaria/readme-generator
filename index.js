@@ -3,6 +3,7 @@ const fs = require('fs');
 const inquirer = require("inquirer");
 
 // TODO: Create an array of questions for user input
+// Asks the user questions about their project
 function askReadMeQuestions() {
     inquirer.prompt([
         {
@@ -59,12 +60,14 @@ function askReadMeQuestions() {
 }
 
 // TODO: Create a function to write README file
+// Creates the file and writes the data to the file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('README file has been created!')
     );
 }
 
+// Returns a license badge for the selected license
 function getLicenseBadge (license) {
     if(license === "MIT"){
         return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
@@ -86,6 +89,7 @@ function getLicenseBadge (license) {
     }
 }
 
+// Returns markdown readme ready to be written to file
 function prepReadmeObj(readmeObj) {
     return `# ${readmeObj.title} ${getLicenseBadge(readmeObj.license)}
 

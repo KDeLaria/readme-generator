@@ -56,7 +56,7 @@ function askReadMeQuestions() {
         {
             type: "list",
             message: "Which license will you use? ",
-            choices: ["MIT", "GNU GPLv3", "ISC", "Mozilla MPL2.0", "Microsoft Public License MS-PL", "none"],
+            choices: ["MIT", "GNU GPLv3", "ISC", "Mozilla Public License 2.0 MPL2.0", "Apache 2.0", "none"],
             name: "license"
         }
     ])
@@ -73,8 +73,26 @@ function writeToFile(fileName, data) {
     );
 }
 
+function getLicenseBadge (license) {
+    if(license === "MIT"){
+        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    }
+    else if (license === "GNU GPLv3") {
+        return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+    }
+    else if (license === "Mozilla Public License 2.0 MPL2.0") {
+        return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+    }
+    else if (license === "Apache 2.0") {
+        return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    }
+    else {
+        return "";
+    }
+}
+
 function prepReadmeObj(readmeObj) {
-    return `# ${readmeObj.title}
+    return `# ${readmeObj.title} ${getLicenseBadge(readmeObj.license)}
 
 ## Description
 ${readmeObj.description}

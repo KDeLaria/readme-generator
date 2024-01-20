@@ -1,7 +1,7 @@
-# jdsajsjfajdhfauh
+# my new project
 
 ## Description
-sdhjkfhaskhfdkhaskj
+makes it easy to create a readme file
     
 ## Table of Contents
 - [Installation](#installation)
@@ -15,32 +15,32 @@ sdhjkfhaskhfdkhaskj
 - [Questions](#questions)
 
 ## Installation
-dijfahioshfha
+This project requires Node.js. In the bash console type "npm i" to install the dependencies.
 
 ## Usage
-djhfakhsdkjfh
+Answer all of the user prompts
 
 ## Credits
 
 
 ## License
-Microsoft Public License MS-PL
+GNU GPLv3
 
 ## Badges
 
 ## Features
 
 ## How to Contribute
-hdskhfasdhf
+No contibutions are needed at this time.
 
 # Tests
-fsfhasjdhfkshdkjf
+Check to make sure that the readme file is written correctly.
 
 # Questions
 Please email me with any questions or concerns.
 
 
-GitHub: [coooo](https://github.com/coooo)
+GitHub: [KDeLaria](https://github.com/KDeLaria)
 
 
-Email: jkhsdlkfahkshfkla
+Email: myemail@somwhere.com

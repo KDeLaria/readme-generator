@@ -83,6 +83,9 @@ function getLicenseBadge (license) {
     else if (license === "Mozilla Public License 2.0 MPL2.0") {
         return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
     }
+    else if ("ISC") {
+        return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+    }
     else if (license === "Apache 2.0") {
         return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
     }
@@ -145,108 +148,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
-// const usernameQuestion = {
-//     type: "input",
-//     message: "What is your username for GitHub? ",
-//     name: "username"
-// };
-
-// const emailQuestion = {
-//     type: "input",
-//     message: "What is your email address? ",
-//     name: "email"
-// };
-
-// const titleQuestion = {
-//     type: "input",
-//     message: "What is the title of your for your project? ",
-//     name: "title"
-// };
-
-// const descriptionQuestion = {
-//     type: "input",
-//     message: "Describe your project: ",
-//     name: "description"
-// };
-
-// const installationQuestion = {
-//     type: "input",
-//     message: "How do you install your project? ",
-//     name: "installation"
-// };
-
-// const usageQuestion = {
-//     type: "input",
-//     message: "How do you use your project? ",
-//     name: "usage"
-// };
-
-// const contributionQuestion = {
-//     type: "input",
-//     message: "What are the contribution guidlines for the project? ",
-//     name: "contribution"
-// };
-
-// const testQuestion = {
-//     type: "input",
-//     message: "What tests should be run on your code? ",
-//     name: "test"
-// };
-
-// const licenseQuestion = {
-//     type: "list",
-//     message: "Which license will you use? ",
-//     choices: ["MIT", "GNU GPLv3", "ISC", "Mozilla MPL2.0", "Microsoft Public License MS-PL", "none"],
-//     name: "license"
-// };
-
-// async function askForUsername(){
-//     const { username } = await inquirer.prompt([ usernameQuestion ]);
-//     askForEmail({username});
-// };
-
-// async function askForEmail(obj){
-//     const { email } = await inquirer.prompt([ emailQuestion ]);
-//     askForTitle({...obj, email});
-// };
-
-// async function askForTitle(obj){
-//     const { title } = await inquirer.prompt([ titleQuestion ]);
-//     askForDescription({...obj, title});
-// };
-
-// async function askForDescription(obj){
-//     const { description } = await inquirer.prompt([ descriptionQuestion ]);
-//     askForInstallation({...obj, description});
-// };
-
-// async function askForInstallation(obj){
-//     const { installation } = await inquirer.prompt([ installationQuestion ]);
-//     askForUsage({...obj, installation});
-// };
-
-// async function askForUsage(obj){
-//     const { usage } = await inquirer.prompt([ usageQuestion ]);
-//     askForContribution({...obj, usage});
-// };
-
-// async function askForContribution(obj){
-//     const { contribution } = await inquirer.prompt([ contributionQuestion ]);
-//     askForTest({...obj, contribution});
-// };
-
-// async function askForTest(obj){
-//     const { test } = await inquirer.prompt([ testQuestion ]);
-//     askForLicense({...obj, test});
-// };
-
-// async function askForLicense(obj){
-//     const { license } = await inquirer.prompt([ licenseQuestion ]);
-
-//     const readmeData = prepReadmeObj({...obj, license});
-
-//     writeToFile("README.md", readmeData);
-// };
-
-////////////////////////////////////////////////////////

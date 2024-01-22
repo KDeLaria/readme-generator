@@ -49,7 +49,7 @@ function askReadMeQuestions() {
         {
             type: "list",
             message: "Which license will you use? ",
-            choices: ["MIT", "GNU GPLv3", "ISC", "Mozilla Public License 2.0 MPL2.0", "Apache 2.0", "none"],
+            choices: ["MIT", "GNU GPLv3", "ISC", "Mozilla Public 2.0 MPL2.0", "Apache 2.0", "none"],
             name: "license"
         }
     ])
@@ -75,7 +75,7 @@ function getLicenseBadge (license) {
     else if (license === "GNU GPLv3") {
         return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     }
-    else if (license === "Mozilla Public License 2.0 MPL2.0") {
+    else if (license === "Mozilla Public 2.0 MPL2.0") {
         return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
     }
     else if ("ISC") {
@@ -117,7 +117,8 @@ ${readmeObj.usage}
 
 
 ## License
-${readmeObj.license}
+${(readmeObj.license === "none") ? "N/A" : "This application is licensed under the " + 
+readmeObj.license + " License.  See license document in this repository."}
 
 ## Badges
 

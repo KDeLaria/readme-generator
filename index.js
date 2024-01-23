@@ -78,7 +78,7 @@ function getLicenseBadge (license) {
     else if (license === "Mozilla Public 2.0 MPL2.0") {
         return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
     }
-    else if ("ISC") {
+    else if (license === "ISC") {
         return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
     }
     else if (license === "Apache 2.0") {
